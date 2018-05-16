@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style/reset.css">
+  <link rel="stylesheet" href="./style/font/iconfont.css">
+  <link rel="stylesheet" href="./style/index.css">
+  <script src="./js/zepto.js"></script>
+  <script src="./js/event.js"></script>
+</head>
+<body>
+  <div class="app">
+    <div class="paint-box" id="paint-box">
+      <canvas id="paintArea" height="300"></canvas>
+    </div>
+    <div class="tool-box">
+      <p>颜色</p>
+      <div class="color-box" id="color-box">
+      </div>
+      <p>画笔大小</p>
+      <div class="brush-box" id="brush-box">
+      </div>
+      <p>工具箱</p>
+      <div class="clear-box">
+        <div id="eraser">
+          <i class="iconfont icon-eraser" id="eraser"></i>
+          <span>橡皮擦</span>
+        </div>
+        <div id="clear">
+          <i class="iconfont icon-delete" id="clear"></i>
+          <span>清除画板</span>
+        </div>
+        <div id="save">
+          <i class="iconfont icon-save" id="clear"></i>
+          <span>保存</span>
+          </div>
+      </div>
+    </div>
+  </div>
+  <div class="mask" id="mask">
+    <div class="confirm">
+      <div class="title">
+        <span>提示</span>
+        <i class="hide-mask">x</i>
+      </div>
+      <p>真的要清除画板吗?</p>
+      <div class="buttons">
+        <span class="hide-mask">取消</span>
+        <span id="delete">确定</span>
+      </div>
+    </div>
+  </div>
+  <div class="save-container" id="save-container"></div>
+  <script src="./js/paint.js"></script>
+</body>
+</html>
